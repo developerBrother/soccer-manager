@@ -1,0 +1,91 @@
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../../images//soccer-field.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.scrollcontainer {
+  background-color: rgb(238, 238, 238);
+  min-width: 0;
+  width: 80%;
+  height: 65vh;
+  margin: 2rem;
+  border-style: solid;
+  border-radius: 3rem;
+  text-align:center;
+  font-size:2rem; 
+  padding: 1rem;
+}
+
+.subcontainer {
+  
+    height:90%;
+    overflow:scroll;
+    overflow-x:hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(1, 2fr);
+    justify-content: center;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  
+}
+
+.subcontainer2 {
+  background-color: rgb(238, 238, 238);
+  width: 80%;
+  height: 65vh;
+  margin: 2rem;
+  border-style: solid;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction:column;
+  font-weight:bold;
+  justify-content: center;
+  padding: 1rem;
+  margin:2rem;
+}
+
+.subcontainer2 select{
+   /*  width:80%; */
+    height:20%;
+    text-align:center;
+    margin-bottom:5%;
+    font-size:3rem;
+    border-radius:2rem;
+}
+
+.subcontainer2 button {
+  height: 8vh;
+  /* width: 80%; */
+  border-radius: 8px;
+  background: radial-gradient(circle, rgba(255,167,41,1) 0%, rgba(241,39,39,1) 65%);
+  
+  color: white;
+  font-family: roboto;
+  font-size: 2rem;
+  font-weight:bold;
+  margin-top:5%;
+}
+
+.subcontainer2 button:hover{
+  cursor:pointer;
+  background: radial-gradient(
+    circle,
+    rgba(241, 39, 39, 1) 52%,
+    rgba(255, 189, 0, 1) 100%
+  );
+  font-size:3rem;
+
+}
+

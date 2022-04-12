@@ -1,0 +1,50 @@
+.modal{
+    border-style:solid;
+    Color:black;
+    background-color: rgba(0,0,0,0.5); 
+    display:flex;
+    
+    justify-content:center;
+    
+    font-size:3rem;
+    /* padding-left:30%; */
+    position:fixed;
+    z-index:1;
+    width:100%;
+    height:100vh;
+    flex-wrap:wrap;
+   
+}
+
+.modal .card{
+    background-color:white;
+    width:50%;
+    border-radius:2rem;
+    height:30%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:10%;
+    overflow:hidden;
+}
+
+.modal .break {
+    height:0;
+    flex-basis:100%;
+}
+
+.modal button{
+    
+    width:30%;
+    height:20vh;
+    border-radius:20%;
+    font-size:2rem;
+}
+
+iframe{
+    width:20%;
+    height:20%;
+    overflow:hidden;
+    
+}
+

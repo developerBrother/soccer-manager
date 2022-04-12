@@ -1,0 +1,38 @@
+.playerbox{
+    background-color:aliceblue;
+   
+    border-style:solid;
+    border-radius:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:10%;
+    position:relative;
+    
+
+}
+
+.selected{
+    color:white;
+    background-color:royalblue;
+}
+
+.playerbox:hover{
+    cursor:pointer;
+}
+
+.name{
+    font-size:1rem;
+}
+
+.rating{
+    font-size:1rem;
+}
+.country{
+    font-size:.8rem;
+}
+
+label{
+    font-size:.9rem;
+    font-weight:bold;
+}

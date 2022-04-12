@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Store from "./components/storepage/Store";
+import Formation from './components/formationpage/Formation';
+import AuthContext from "./context/context";
+import {players} from './playerData';
+import {playersForSale} from './playerData';
+
+import "./App.css";
 
 function App() {
+  const [points, setPoints] = useState(100);
+  const [playerList, changePlayers] = useState(players);
+  const [salePlayers,changeSale]=useState(playersForSale);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <AuthContext.Provider
+        value={{
+          points: points,
+          setPoints,
+          playerList: playerList,
+          changePlayers,
+          salePlayers: salePlayers,
+          changeSale
+        }}
+      >
+        <Routes>
+          <Route path="/" element={<Store />} />
+          <Route path="formation" element={<Formation/>}/>
+        </Routes>
+      </AuthContext.Provider>
     </div>
   );
 }

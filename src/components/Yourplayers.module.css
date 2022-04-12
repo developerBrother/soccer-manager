@@ -1,0 +1,6 @@
+.container{
+    height:40vh;
+    overflow:scroll;
+    overflow-x:hidden;
+    padding:1rem;
+}
